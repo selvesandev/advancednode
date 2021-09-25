@@ -41,3 +41,6 @@ crypto.pbkdf2('a', 'b', 100000, 512, 'sha512', () => {
 Both this would get executed in the same time because both of these are running at the same time in multithreads. The `pbkdf2` is the function that place takes in the `c++`, it uses thread pool to run compliated task.
 
 https://betterprogramming.pub/is-node-js-really-single-threaded-7ea59bcc8d64
+
+![image](https://user-images.githubusercontent.com/21096850/134775842-cbb3f439-8a05-4166-ba68-dca2261423f4.png)
+
