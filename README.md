@@ -52,11 +52,10 @@ Below is the things that gets checked in every single tick of a event loop
             console.log('clean up code');
         })
     ```
-   
 
 ## Single Threaded 
 
-Node js is not fully single threaded. When we startup a program with a single instance of event loop is created and placed in one thread. But some of the function that are inside the node js are not single threaded. The event loop uses single threaded but not all the code in node js is single threaded.
+Node js is not fully single threaded. When we startup a program with a single instance of event loop is created and placed in one thread. But some of the function that are inside the node js are not single threaded. The event loop uses single threaded but not all the code in node js is single threaded. Some of the function that we use run outside of that event loop and outside of single thread.
 
 ```js
 
