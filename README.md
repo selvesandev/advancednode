@@ -3,6 +3,9 @@
 ## Node Threads
 When you run program in a computer you start something called process withing which we can have multiple threads. Threads are the to do list of instructions that needs to be perfomed by CPU. 
 
+<img width="494" alt="image" src="https://user-images.githubusercontent.com/21096850/174421282-fc3e2643-8d75-4a8f-834f-4fb88026bf17.png">
+
+
 `Activity Monitor` check here to see the list of processes in CPU tab and click a process to see the list of threads being used.
 
 Which thread to process when is determined by something called scheduling.
