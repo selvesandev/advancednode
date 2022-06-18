@@ -26,10 +26,11 @@ In javascript world if we have two threads are processing 1 is reading file and 
 **NOTE** Threads are unique of instructions that are waiting to be executed by the CPU deciding which order to execute this thread in is refer to as scheduling which is operated by your operating system. Two ways we can improve the rate at which we execute the thread is either add more CPU core or to allow our OS scheduler to detech big pauses in processing time.
 
 ## Event Loop
+Whenever a nodejs application is started in a computer node create 1 thread and executes all of our code inside of that 1 single thread.
 
 ![image](https://user-images.githubusercontent.com/21096850/133538057-99e5b8bd-9e80-4118-8768-19a92e3f6c97.png)
 
-Inside a single thread there is something called event loop. Node js does three checks to decide whether to continue the event loop or not
+Inside of this single thread there is something called event loop. Every node program that we run has 1 event loop. The event loop is a control structure that decides what 1 thread should be doing at any given point of time. This even loop is the core of every node programming that is gets run. Node js does three checks to decide whether to continue the event loop or not
 
 1) Is there any function that is registered with `setTimeout`, `setInterval`, `setImmediate`
 2) Is there any operating system task. E.g. server listening to http request in some port.
