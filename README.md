@@ -12,6 +12,19 @@ Which thread to process when is determined by something called scheduling.
 
 Threads are unit of instructions that are waiting to be executed by CPU. Desciding which order to execute this thread is called scheduling which is decided by your OS.
 
+Some threads like mouse movement, keyboard type etc does not have to wait for the scheduling.
+
+<img width="1078" alt="image" src="https://user-images.githubusercontent.com/21096850/174421898-f43ec0ac-0145-4984-b416-e4750a54e56f.png">
+
+
+1 core can process more that one threads at a time through a process called multithreading or hyperthreading and More Cores in the CPU is equals to more thread being processed at once.
+
+<img width="1082" alt="image" src="https://user-images.githubusercontent.com/21096850/174421927-153ba0b9-5abc-4844-97b6-33eb8962264d.png">
+
+In javascript world if we have two threads are processing 1 is reading file and other is multiplying two numbers. Since thread 1 is reading file it will take some time to do so. During this time the thread 1 has absolutely no work to do it's just sitting there for the read to complete. Your operating system's scheduler has the ability to detect this downtime so it's decides to pause the thread 1 and execute thread 2 and go back to thread 1 and continue waiting.
+
+**NOTE** Threads are unique of instructions that are waiting to be executed by the CPU deciding which order to execute this thread in is refer to as scheduling which is operated by your operating system. Two ways we can improve the rate at which we execute the thread is either add more CPU core or to allow our OS scheduler to detech big pauses in processing time.
+
 ## Event Loop
 
 ![image](https://user-images.githubusercontent.com/21096850/133538057-99e5b8bd-9e80-4118-8768-19a92e3f6c97.png)
