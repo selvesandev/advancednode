@@ -30,7 +30,7 @@ Whenever a nodejs application is started in a computer node create 1 thread and 
 
 ![image](https://user-images.githubusercontent.com/21096850/133538057-99e5b8bd-9e80-4118-8768-19a92e3f6c97.png)
 
-Inside of this single thread there is something called event loop. Every node program that we run has 1 event loop. The event loop is a control structure that decides what 1 thread should be doing at any given point of time. This even loop is the core of every node programming that is gets run. Node js does three checks to decide whether to continue the event loop or not
+Inside of this single thread there is something called event loop. Every node program that we run has 1 event loop. The event loop is a control structure that decides what 1 thread should be doing at any given point of time. This even loop is the core of every node programming that is gets run. Node js does three checks to decide whether to continue the event loop or not as soon as we start the node js server.
 
 1) Is there any function that is registered with `setTimeout`, `setInterval`, `setImmediate`
 2) Is there any operating system task. E.g. server listening to http request in some port.
