@@ -1,0 +1,22 @@
+{
+  "name": "advancednode",
+  "version": "1.0.0",
+  "description": "## Node Threads When you run program in a computer you start something called process withing which we can have multiple threads. Threads are the to do list of instructions that needs to be perfomed by CPU.",
+  "main": "event_emit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selvesandev/advancednode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/selvesandev/advancednode/issues"
+  },
+  "homepage": "https://github.com/selvesandev/advancednode#readme",
+  "dependencies": {
+    "csv-parse": "^5.3.2"
+  }
+}
